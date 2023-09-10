@@ -1,0 +1,10 @@
+.bg-custom {
+  background-color: #E6E2DD;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container {
+  border-radius: 10px;
+}

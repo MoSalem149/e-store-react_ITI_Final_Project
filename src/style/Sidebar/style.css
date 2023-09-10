@@ -1,0 +1,135 @@
+/* Sidebar Styles */
+.sidebar_category {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin-top: -30px;
+  width: 200px;
+  /* Background color, padding, and styling for the sidebar container */
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 20px;
+  /* Align section titles to the left and add margin for spacing */
+}
+
+.section-title h4 {
+  font-size: 1.3rem;
+  color: #009688;
+  font-weight: 500;
+  /* Style for section titles, including font size, color, and weight */
+}
+
+.section-title a {
+  text-decoration: none;
+}
+
+.section-title a h4:hover {
+  color: wheat;
+  transform: scale(1.1);
+}
+
+.category_accordion {
+  padding: 10px;
+  /* Add padding to the category accordion container */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  /* Styling for individual category cards */
+}
+
+.card-background {
+  background-color: #e6e2dd !important;
+  /* Override card background color, important for specificity */
+}
+
+.card-heading a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  color: #009688;
+  display: flex;
+  align-items: center;
+  /* Styling for card headings, including links, padding, and color */
+}
+
+.card-heading a i {
+  margin-right: 10px;
+  /* Add space between icon and text in card headings */
+}
+
+.card-heading a:hover {
+  background-color: #009688;
+  border-radius: 10px;
+  color: #fff;
+  transform: scale(1.05);
+  /* Hover effect for card headings */
+}
+
+.card-body ul {
+  list-style-type: none;
+  padding: 0;
+  /* Remove list styling and padding for card body lists */
+}
+
+.card-body ul li {
+  padding: 5px 0;
+  transition: transform 0.3s ease;
+  /* Add a scale transition effect to list items */
+}
+
+.card-body ul li:hover {
+  transform: scale(1.05);
+  /* Hover effect for list items */
+}
+
+.card-body ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+  /* Styling for list item links, including color and hover transition */
+}
+
+.card-body ul li a:hover {
+  color: #009688;
+  transform: scale(1.2);
+  /* Hover effect for list item links */
+}
+
+.visible {
+  display: block;
+  /* Show elements with the "visible" class */
+}
+
+.hidden {
+  display: none;
+  /* Hide elements with the "hidden" class */
+}
+
+/* Make the sidebar responsive */
+/* @media (min-width: 769px) {
+  .section-title.fixed {
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    top: 100px;
+    left: 30px;
+    z-index: 1;
+  }
+} */
+
+
+/*Make the sidebar responsive */
+@media (max-width: 768px) {
+  .sidebar_category {
+    width: 100%;
+  }
+}

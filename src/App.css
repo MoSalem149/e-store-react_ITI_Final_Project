@@ -1,0 +1,75 @@
+/* Enable smooth scrolling behavior for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Customize the appearance of the scrollbars */
+html::-webkit-scrollbar {
+  width: .8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  /* Set the width of the scroll bar */
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: #009688;
+  /* Set the color of the scroll bar handle */
+  border-radius: 5px;
+  /* Set the border radius of the scroll bar handle */
+}
+
+/* When hovered */
+html::-webkit-scrollbar-thumb:hover {
+  background: #009687bc;
+  /* Change the color on hover */
+}
+
+/* Styles for the overall application container */
+.App {
+  text-align: center;
+  background-color: #E6E2DD;
+}
+
+/* Styles for the application logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation for the application logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles for the application header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Styles for links within the application */
+.App-link {
+  color: #61dafb;
+}
+
+/* Keyframes for spinning animation of the application logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

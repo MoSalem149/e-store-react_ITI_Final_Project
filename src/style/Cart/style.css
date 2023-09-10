@@ -1,0 +1,103 @@
+/* Add this CSS to your stylesheet */
+
+/* Button Styles */
+.btn-color {
+  background-color: #009688 !important;
+  transition: all 0.3s ease;
+  color: white !important;
+  /* Style for buttons with background color and hover transition */
+}
+
+.btn-color:hover {
+  transform: scale(1.1);
+  /* Scale the button on hover */
+  background-color: #009687bc !important;
+  /* Change the background color on hover */
+}
+
+/* CSS Animation for Rotating Cart Icon */
+@keyframes rotateCart {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the cart icon on button hover */
+.btn-color:hover .fas.fa-cart-plus {
+  animation: rotateCart 1s infinite linear;
+  /* Rotate the cart icon on hover */
+}
+
+/* Container Styles */
+.contain {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  /* Styling for containers with borders and padding */
+}
+
+/* Heading Styles */
+h2 {
+  color: #009688 !important;
+  /* Color for h2 headings */
+}
+
+/* Background Color Styles */
+.bg-colr {
+  background-color: #E6E2DD !important;
+  /* Background color for elements with the "bg-colr" class */
+}
+
+/* Add this CSS to style the scroll bar */
+/* For Webkit based browsers (Chrome, Safari) */
+/* You may need to adjust these styles to fit your design */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Set the width of the scroll bar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009688;
+  /* Set the color of the scroll bar handle */
+  border-radius: 5px;
+  /* Set the border radius of the scroll bar handle */
+}
+
+/* When hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #009687bc;
+}
+
+
+
+/* @media (min-width: 769px) {
+
+  Add this CSS to add a scrollbar to the fixed content
+  .btn-title.fixed {
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    top: 100px;
+    left: 10px;
+    z-index: 1;
+    max-height: calc(100vh - 120px);
+    Set a max height for the fixed content
+    overflow-y: auto;
+    Add a vertical scrollbar when content overflows
+  }
+
+} */
+
+@media (max-width: 769px) {
+  .contain {
+    width: 100%;
+  }
+}

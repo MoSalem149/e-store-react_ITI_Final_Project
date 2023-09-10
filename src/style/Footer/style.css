@@ -1,0 +1,140 @@
+/* Footer container styling */
+.footer {
+  padding: 50px 0 20px 0;
+  background-color: #010101ef;
+  color: #878c94;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  /* Center align the entire footer content */
+}
+
+/* Footer title styling */
+.footer .title {
+  text-align: left;
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #009688;
+}
+
+/* Social media icon styling */
+.footer .social-icon {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer .social-icon a {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer .social-icon a:hover {
+  color: #009688;
+  transform: scale(1.2);
+}
+
+/* Account icon styling */
+.footer .acount-icon a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.footer .acount-icon .fa {
+  margin-right: 25px;
+}
+
+/* Category link styling */
+.footer .category a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 1px;
+  border-radius: 4px;
+  margin-top: 6px;
+  background-color: #009688;
+  border: solid 1px #fff;
+}
+
+/* Payment method icon styling */
+.footer .payment {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.footer .payment li {
+  list-style-type: none;
+}
+
+.footer .payment li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  float: right;
+  font-size: 25px;
+  padding: 10px 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer .payment li a:hover {
+  color: #009688;
+  transform: scale(1.2);
+}
+
+/* Hover effects for category links */
+.footer .category a:hover {
+  transform: scale(1.1);
+  background-color: #00968795;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for account icons */
+.footer .acount-icon a:hover {
+  transform: rotate(-360deg);
+  color: #009688;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .title {
+    font-size: 20px;
+    border-bottom: none;
+  }
+
+  .footer .social-icon a {
+    font-size: 20px;
+  }
+
+  .footer .acount-icon a {
+    font-size: 16px;
+  }
+
+  .footer .category a {
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-top: 4px;
+  }
+
+  /* Center align the payment icons */
+  .footer .payment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .payment li a {
+    font-size: 20px;
+    padding: 8px 8px;
+  }
+}

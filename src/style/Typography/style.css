@@ -1,0 +1,36 @@
+/* Import the 'Borel' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+/* Styling for text animation */
+.char-animation {
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 50px;
+  font-style: italic;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+}
+
+/* Container for the animated message */
+.message-container {
+  display: inline-block;
+  height: 100%;
+}
+
+/* Styling for the text message */
+.message-text {
+  color: black;
+  font-family: 'Borel', cursive;
+  /* Apply the 'Borel' font to the message */
+}
+
+/* Styling for the text that changes color */
+span.color-change {
+  color: #009688;
+  /* Green color for the 'color-change' span */
+  font-family: 'Borel', cursive;
+  /* Apply the 'Borel' font to the span */
+  font-style: italic;
+}
