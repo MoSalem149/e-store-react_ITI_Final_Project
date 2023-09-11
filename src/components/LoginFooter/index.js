@@ -9,7 +9,7 @@ function LoginFooter() {
     <footer className="bg-dark text-center py-4">
       <p>
         &copy; {new Date().getFullYear()} eStore. All rights reserved By
-        MoSale149.
+        MoSalem149.
       </p>
     </footer>
   );
