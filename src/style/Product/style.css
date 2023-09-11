@@ -1,0 +1,141 @@
+/* CSS for Product Cards */
+
+.product__item {
+  margin-bottom: 35px;
+  transition: transform 0.3s ease;
+
+}
+
+.product__item:hover {
+  transform: scale(1.05);
+  /* Scale up on hover */
+}
+
+.product__item:hover .product__hover li {
+  opacity: 1;
+  top: 0;
+  transition: opacity 0.4s ease, top 0.4s ease;
+  /* Add hover transition */
+}
+
+.product__hover {
+  position: absolute;
+  text-align: center;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+
+.product__hover li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  margin-right: 10px;
+  top: 100px;
+}
+
+.product__hover li:nth-child(1) {
+  transition: all 0.4s ease 0.1s;
+}
+
+.product__hover li:hover a {
+  background: #009688;
+}
+
+.product__hover li:hover a span {
+  color: #fff;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product__hover li a {
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  background: rgb(82, 80, 80);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  line-height: 48px;
+  color: #111111;
+  transition: all 0.5s;
+}
+
+.product__hover li a span {
+  position: relative;
+  display: inline-block;
+}
+
+.product__item__pic {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product__item__text {
+  text-align: center;
+  padding-top: 22px;
+}
+
+.product__item__text h6 a {
+  font-size: 14px;
+  color: #111111;
+}
+
+.product__item__text .rating {
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.product__item__text .rating i {
+  font-size: 10px;
+  color: #009688;
+  margin-right: 2px;
+}
+
+.product__item__text .product__price {
+  color: #111111;
+  font-weight: 600;
+}
+
+.product__item__text .product__price span {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+/* CSS */
+.item:hover {
+  color: white !important;
+  background-color: #343a40 !important;
+  transform: scale(1.1);
+  font-size: medium;
+}
+
+.active {
+  background-color: #009688 !important;
+  color: white !important;
+  border-radius: 50%;
+  transform: scale(1.1);
+  font-size: medium;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product__item {
+    margin-bottom: 20px;
+  }
+
+  .product__hover {
+    bottom: 15px;
+  }
+
+  .product__hover li {
+    margin-right: 5px;
+    top: 60px;
+  }
+
+  .product__item__pic {
+    padding: 10px;
+  }
+}
