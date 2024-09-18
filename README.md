@@ -33,4 +33,4 @@ Here are some screenshots of the application:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/MoSalem149v2/e-store-react_ITI_Final_Project.git
+   git clone https://github.com/MoSalem149/e-store-react_ITI_Final_Project.git
