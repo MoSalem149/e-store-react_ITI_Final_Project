@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "../../style/Sidebar/style.css";
 
 const Sidebar = () => {
   const [isFixed, setIsFixed] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setIsFixed(true);
-  //     } else {
-  //       setIsFixed(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
 
-  //   window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [isMenOpen, setIsMenOpen] = useState(false);
   const [isWomenOpen, setIsWomenOpen] = useState(false);
@@ -48,73 +49,79 @@ const Sidebar = () => {
     <div className="sidebar_category bg-dark py-4 my-5">
       {/* Sidebar container */}
       <div className={`section-title bg-dark ${isFixed ? "fixed" : ""}`}>
-        <a href="#">
+        <Link to="#">
           <h4>
             <i className="fas fa-folder px-2"></i>Categories
           </h4>
-        </a>
+        </Link>
       </div>
       <div className="category_accordion">
         <div className="accordion">
           {/* Card for Men category */}
           <div className="card card-background">
             <div className="card-heading" onClick={() => toggleCard("Men")}>
-              <a href="#">
+              <Link to="#">
                 <i className="fas fa-male"></i> Men{" "}
                 <i
                   className={`fas ${
                     isMenOpen ? "fa-caret-up" : "fa-caret-down"
                   } px-2`}
                 ></i>
-              </a>
+              </Link>
             </div>
             <div className={`card-body ${isMenOpen ? "visible" : "hidden"}`}>
               {/* List of items under the Men category */}
               <ul>
                 <li>
                   <i className="fas fa-caret-right"></i>{" "}
-                  <a href="#">T-Shirts</a>
+                  <Link to="/men/t-shirts">T-Shirts</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Jeans</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/men/jeans">Jeans</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Suits</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/men/suits">Suits</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Shoes</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/men/shoes">Shoes</Link>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Repeat the structure for Women, Kids, and Baby cards */}
           {/* Card for Women category */}
           <div className="card card-background">
             <div className="card-heading" onClick={() => toggleCard("Women")}>
-              <a href="#">
+              <Link to="#">
                 <i className="fas fa-female"></i> Women{" "}
                 <i
                   className={`fas ${
                     isWomenOpen ? "fa-caret-up" : "fa-caret-down"
                   } px-2`}
                 ></i>
-              </a>
+              </Link>
             </div>
             <div className={`card-body ${isWomenOpen ? "visible" : "hidden"}`}>
               {/* List of items under the Women category */}
               <ul>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Dresses</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/women/dresses">Dresses</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Blouses</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/women/blouses">Blouses</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Skirts</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/women/skirts">Skirts</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Shoes</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/women/shoes">Shoes</Link>
                 </li>
               </ul>
             </div>
@@ -123,31 +130,33 @@ const Sidebar = () => {
           {/* Card for Kids category */}
           <div className="card card-background">
             <div className="card-heading" onClick={() => toggleCard("Kids")}>
-              <a href="#">
+              <Link to="#">
                 <i className="fas fa-child"></i> Kids{" "}
                 <i
                   className={`fas ${
                     isKidsOpen ? "fa-caret-up" : "fa-caret-down"
                   } px-2`}
                 ></i>
-              </a>
+              </Link>
             </div>
             <div className={`card-body ${isKidsOpen ? "visible" : "hidden"}`}>
               {/* List of items under the Kids category */}
               <ul>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Toys</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/kids/toys">Toys</Link>
                 </li>
                 <li>
                   <i className="fas fa-caret-right"></i>{" "}
-                  <a href="#">School Supplies</a>
+                  <Link to="/kids/school-supplies">School Supplies</Link>
                 </li>
                 <li>
                   <i className="fas fa-caret-right"></i>{" "}
-                  <a href="#">Clothing</a>
+                  <Link to="/kids/clothing">Clothing</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Shoes</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/kids/shoes">Shoes</Link>
                 </li>
               </ul>
             </div>
@@ -156,31 +165,33 @@ const Sidebar = () => {
           {/* Card for Baby category */}
           <div className="card card-background">
             <div className="card-heading" onClick={() => toggleCard("Baby")}>
-              <a href="#">
+              <Link to="#">
                 <i className="fas fa-baby"></i> Baby{" "}
                 <i
                   className={`fas ${
                     isBabyOpen ? "fa-caret-up" : "fa-caret-down"
                   } px-2`}
                 ></i>
-              </a>
+              </Link>
             </div>
             <div className={`card-body ${isBabyOpen ? "visible" : "hidden"}`}>
               {/* List of items under the Baby category */}
               <ul>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Diapers</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/baby/diapers">Diapers</Link>
                 </li>
                 <li>
                   <i className="fas fa-caret-right"></i>{" "}
-                  <a href="#">Baby Food</a>
+                  <Link to="/baby/food">Baby Food</Link>
                 </li>
                 <li>
                   <i className="fas fa-caret-right"></i>{" "}
-                  <a href="#">Clothing</a>
+                  <Link to="/baby/clothing">Clothing</Link>
                 </li>
                 <li>
-                  <i className="fas fa-caret-right"></i> <a href="#">Toys</a>
+                  <i className="fas fa-caret-right"></i>{" "}
+                  <Link to="/baby/toys">Toys</Link>
                 </li>
               </ul>
             </div>

@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.15",
-    "@babel/preset-react": "^7.22.15"
+    "@babel/preset-react": "^7.22.15",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
   }
 }

@@ -66,7 +66,7 @@ function Header() {
                 <li className="dropdown">
                   <a
                     className="dropdown-toggle"
-                    href="#"
+                    href="#/"
                     role="button"
                     data-bs-toggle="dropdown"
                   >
@@ -74,51 +74,51 @@ function Header() {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Arabic
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Russian
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         English
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         French
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Mandarin
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Italian
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Georgian
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#/">
                     <i className="fas fa-user"></i> My Account
                   </a>
                 </li>
                 <li className="dropdown">
                   <a
                     className="dropdown-toggle"
-                    href="#"
+                    href="#/"
                     role="button"
                     data-bs-toggle="dropdown"
                   >
@@ -126,52 +126,52 @@ function Header() {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         USD
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         EUR
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         $
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         GBP (Pound Sterling)
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Scottish GBP (Scottish Pound)
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         Jersey GBP (Jersey Pound)
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         EGP (Egypt Pound)
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         JPY
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         AUD
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#/">
                         SAR (Saudi Riyal)
                       </a>
                     </li>
@@ -189,7 +189,7 @@ function Header() {
         }`}
       >
         <div className="container">
-          <a className="navbar-brand py-3 d-none d-lg-block" href="#">
+          <a className="navbar-brand py-3 d-none d-lg-block" href="#/">
             <i className="fas fa-store"></i>
           </a>
           <button
@@ -204,14 +204,14 @@ function Header() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {/* Navigation Links */}
               <li className="nav-item">
-                <a className="nav-link bg-home" href="#">
+                <a className="nav-link bg-home" href="#/">
                   Home
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="#/"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -221,22 +221,22 @@ function Header() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item about-dropdown-item" href="#">
+                    <a className="dropdown-item about-dropdown-item" href="#/">
                       Men
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item about-dropdown-item" href="#">
+                    <a className="dropdown-item about-dropdown-item" href="#/">
                       Woman
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item about-dropdown-item" href="#">
+                    <a className="dropdown-item about-dropdown-item" href="#/">
                       Kids
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item about-dropdown-item" href="#">
+                    <a className="dropdown-item about-dropdown-item" href="#/">
                       Baby
                     </a>
                   </li>
@@ -245,22 +245,22 @@ function Header() {
 
               {/* Other menu items */}
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#/">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#/">
                   Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#/">
                   Blog
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#/">
                   Contact Us
                 </a>
               </li>
@@ -280,7 +280,7 @@ function Header() {
             </form>
             {/* User Account and Cart Icons */}
             <div className="cart-heart ms-3">
-              <a href="#">
+              <a href="#/">
                 <i className="fas fa-user"></i>
               </a>
             </div>

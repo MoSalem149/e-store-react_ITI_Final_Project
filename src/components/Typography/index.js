@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../../style/Typography/style.css"; // Import the separate CSS file for styling
 
-const CharAnimation = () => {
-  // Define an array of messages to display in the animation
-  const messages = ["Welcome To Our ", "E-Store"];
+// Define the messages array outside the component
+const messages = ["Welcome To Our ", "E-Store"];
 
+const CharAnimation = () => {
   // Initialize state variables
   const [displayedText, setDisplayedText] = useState("");
   const [animationIndex, setAnimationIndex] = useState(0);
@@ -15,12 +15,11 @@ const CharAnimation = () => {
     const animationInterval = setInterval(() => {
       setDisplayedText((prevText) => {
         if (animationIndex >= messages[messageIndex].length) {
+          // Reset animationIndex and move to the next message
           setAnimationIndex(0);
-          if (messageIndex === messages.length - 1) {
-            setMessageIndex(0);
-          } else {
-            setMessageIndex(messageIndex + 1);
-          }
+          setMessageIndex((prevMessageIndex) =>
+            prevMessageIndex === messages.length - 1 ? 0 : prevMessageIndex + 1
+          );
           return "";
         }
         const nextChar = messages[messageIndex].charAt(animationIndex);
@@ -33,7 +32,7 @@ const CharAnimation = () => {
     return () => {
       clearInterval(animationInterval);
     };
-  }, [animationIndex, messageIndex, messages]);
+  }, [animationIndex, messageIndex]); // Only include dynamic dependencies
 
   // JSX for rendering the character animation
   return (

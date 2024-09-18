@@ -17,6 +17,7 @@ const Product = ({ addToCart }) => {
       <ul className="nav nav-tabs my-2">
         <li className="nav-item">
           <a
+            href="#/"
             className={`nav-link item ${
               selectedSection === "All" ? "active" : ""
             }`}
@@ -28,6 +29,7 @@ const Product = ({ addToCart }) => {
         </li>
         <li className="nav-item">
           <a
+            href="#/"
             className={`nav-link item ${
               selectedSection === "Men" ? "active" : ""
             }`}
@@ -39,6 +41,7 @@ const Product = ({ addToCart }) => {
         </li>
         <li className="nav-item">
           <a
+            href="#/"
             className={`nav-link item ${
               selectedSection === "Women" ? "active" : ""
             }`}
@@ -52,6 +55,7 @@ const Product = ({ addToCart }) => {
         </li>
         <li className="nav-item">
           <a
+            href="#/"
             className={`nav-link item ${
               selectedSection === "Kids" ? "active" : ""
             }`}
@@ -65,6 +69,7 @@ const Product = ({ addToCart }) => {
         </li>
         <li className="nav-item">
           <a
+            href="#/"
             className={`nav-link item ${
               selectedSection === "Baby" ? "active" : ""
             }`}
@@ -104,7 +109,7 @@ const Product = ({ addToCart }) => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" onClick={() => addToCart(product)}>
+                    <a href="#/" onClick={() => addToCart(product)}>
                       <span className="fa fa-shopping-cart" />
                     </a>
                   </li>
@@ -112,7 +117,7 @@ const Product = ({ addToCart }) => {
               </div>
               <div className="product__item__text">
                 <h6>
-                  <a href="#">{product.name}</a>
+                  <a href="#/">{product.name}</a>
                 </h6>
                 <p>{product.description}</p>{" "}
                 {/* Display the product description */}

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useCallback } from "react";
+// import { useNavigate } from "react-router-dom";
 import LoginHeader from "../LoginHeader";
 import LoginFooter from "../LoginFooter";
 import "../../style/Loogin/style.css";
@@ -21,7 +21,6 @@ function Login({ onLogin }) {
   const [signUpSuccess, setSignUpSuccess] = useState(false);
 
   const [userRole, setUserRole] = useState("");
-  const navigate = useNavigate();
 
   const isAlpha = (input) => /^[a-zA-Z]+$/.test(input);
   const isEmail = (input) =>
@@ -29,20 +28,7 @@ function Login({ onLogin }) {
   const isPhoneNumber = (input) => /^[0-9]+$/.test(input);
   const isPasswordValid = (input) => input.length >= 8;
 
-  useEffect(() => {
-    if (signUpSuccess) {
-      // After successful sign-up, populate the login fields
-      setUsername(signUpUsername);
-      setPassword(signUpPassword);
-      setShowSignUp(false);
-
-      // Automatically trigger login
-      handleLogin();
-    }
-  }, [signUpSuccess, signUpUsername, signUpPassword]);
-
-  const handleLogin = () => {
-    // Check if the entered username and password match the sign-up credentials
+  const handleLogin = useCallback(() => {
     if (username === signUpUsername && password === signUpPassword) {
       setUserRole("User");
       onLogin();
@@ -55,7 +41,16 @@ function Login({ onLogin }) {
     } else {
       setValidated(true);
     }
-  };
+  }, [username, password, signUpUsername, signUpPassword, onLogin]);
+
+  useEffect(() => {
+    if (signUpSuccess) {
+      setUsername(signUpUsername);
+      setPassword(signUpPassword);
+      setShowSignUp(false);
+      handleLogin();
+    }
+  }, [signUpSuccess, signUpUsername, signUpPassword, handleLogin]);
 
   const handleSignUp = () => {
     if (

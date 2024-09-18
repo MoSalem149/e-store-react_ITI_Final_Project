@@ -61,9 +61,7 @@ const Cart = ({ cartItems, onRemoveItem, onConfirmPurchase }) => {
     >
       <div className="cart-heart ms-3 py-4">
         <button className="btn btn-color" onClick={toggleCartVisibility}>
-          <a href="#">
-            <i className="fas fa-cart-plus"></i>
-          </a>
+          <i className="fas fa-cart-plus"></i>
           {isCartVisible ? "Hide Cart" : "Show Cart"}
         </button>
       </div>
