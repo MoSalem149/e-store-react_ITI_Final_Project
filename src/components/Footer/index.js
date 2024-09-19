@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Social Section */}
           <div className="col-sm-3">
             <h4 className="title">
-              <i class="fas fa-users px-2"></i>Social
+              <i className="fas fa-users px-2"></i>Social
             </h4>
             <p>
               Connect, engage, and stay updated with our online community. Join
@@ -41,7 +41,7 @@ const Footer = () => {
           {/* My Account Section */}
           <div className="col-sm-3">
             <h4 className="title">
-              <i class="fas fa-id-card px-2"></i>My Account
+              <i className="fas fa-id-card px-2"></i>My Account
             </h4>
             <span className="acount-icon">
               <a href="/wishlist">
@@ -81,7 +81,7 @@ const Footer = () => {
           {/* Payment Methods Section */}
           <div className="col-sm-3">
             <h4 className="title">
-              <i class="fas fa-dollar-sign px-2"></i>Payment Methods
+              <i className="fas fa-dollar-sign px-2"></i>Payment Methods
             </h4>
             <p>
               Discover hassle-free payment options at your fingertips. Lorem

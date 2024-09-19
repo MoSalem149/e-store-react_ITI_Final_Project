@@ -15,7 +15,7 @@ const AboutUs = () => {
           className="btn btn-color py-3"
           onClick={toggleAboutUsVisibility}
         >
-          <i class="fas fa-info-circle px-1"></i>
+          <i className="fas fa-info-circle px-1"></i>
           {isAboutUsVisible ? "Hide About Us" : "Show About Us"}
         </button>
       </div>
